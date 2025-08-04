@@ -1,8 +1,9 @@
-📸 Face Recognition Based Attendance System
+## 📸 Face Recognition Based Attendance System
 
 This project is a Python-based Face Recognition Attendance System that utilizes the power of facenet-pytorch for facial recognition. It automates the process of taking attendance from a group photo by identifying students based on pre-stored images.
 
-🚀 Features
+## 🚀 Features 
+
 🔍 Face Detection using MTCNN
 
 🧠 Face Embedding using InceptionResnetV1 (VGGFace2)
@@ -11,19 +12,14 @@ This project is a Python-based Face Recognition Attendance System that utilizes 
 
 🖼️ Visual Output with bounding boxes and student registration numbers
 
-📦 Installation
+## 📦 Installation 
 Install all required Python libraries using pip:
 
-bash
-Copy
-Edit
-pip install facenet-pytorch mtcnn opencv-python numpy scikit-learn
-🗂️ Dataset Structure
+pip install facenet-pytorch mtcnn opencv-python numpy scikit-learn 
+
+## 🗂️ Dataset Structure 
 Organize your dataset folder like this:
 
-mathematica
-Copy
-Edit
 Dataset/
 ├── 2241016042/
 │   ├── img1.jpg
@@ -32,9 +28,10 @@ Dataset/
 │   ├── img1.jpg
 │   ├── img2.jpg
 
+
 Each subfolder should be named after a student's registration number, and contain multiple clear face images of the student.
 
-⚙️ How It Works
+## ⚙️ How It Works 
 🔧 Extracts face embeddings from all student images using a pretrained FaceNet model.
 
 🧠 Averages multiple embeddings per student to create a single representative embedding.
@@ -45,20 +42,20 @@ Each subfolder should be named after a student's registration number, and contai
 
 🟩 Annotates recognized students and marks them present.
 
-🖼️ Output
-A visual output image (output_with_boxes.jpg) is generated with:
+## 🖼️ Output 
+#### A visual output image (output_with_boxes.jpg) is generated with:
 
 ✅ Green boxes and labels for recognized students
 
 ❌ Red boxes labeled "Unknown" for unrecognized faces
 
-📁 Files
-File	Description
-generate_embeddings.py	Extracts and saves face embeddings for students
-mark_attendance.py	Detects and recognizes students from group photo
-student_embeddings.npy	Stores average embeddings for each student
-
-👨‍💻 Author & License
-Developed with ❤️ by Abhijeet Panda
-Licensed under the MIT License
-
+## 📁 Files 
+### File Description 
+#### Dataset_creation.py 
+Extracts and saves face embeddings for students
+#### train.py
+make the model and help in generating the embeddings of the Dataset 
+#### student_embeddings.npy
+Stores average embeddings for each student
+#### mark_attendance.py
+Detects and recognizes students from group photo 
