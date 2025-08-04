@@ -31,6 +31,7 @@ Dataset/
 ├── 2241016043/
 │   ├── img1.jpg
 │   ├── img2.jpg
+
 Each subfolder should be named after a student's registration number, and contain multiple clear face images of the student.
 
 ⚙️ How It Works
